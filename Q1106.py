@@ -1,3 +1,7 @@
+"""
+완전탐색, 상향식 접근, 메모이제이션 결합한 DP문제
+"""
+
 def min_cost_to_gather_customers(C, city_info):
     # 동적 프로그래밍 배열 초기화
     # 목표 고객 수 C를 정확히 맞출 수 있도록 배열 크기 설정
