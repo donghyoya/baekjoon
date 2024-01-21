@@ -2,7 +2,7 @@
 완전탐색, 상향식 접근, 메모이제이션 결합한 DP문제
 """
 
-def min_cost_to_gather_customers(C, city_info):
+def dp_func(C, city_info):
     # 동적 프로그래밍 배열 초기화
     # 목표 고객 수 C를 정확히 맞출 수 있도록 배열 크기 설정
     max_customers = max(city[0] for city in city_info) * C + 1
@@ -22,5 +22,5 @@ C, n = map(int, input().split())
 city_info = [tuple(map(int, input().split())) for _ in range(n)]
 
 # 최소 비용 계산
-min_cost = min_cost_to_gather_customers(C, city_info)
+min_cost = dp_func(C, city_info)
 print(min_cost)

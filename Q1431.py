@@ -26,9 +26,15 @@ def compare_serials(a, b):
 # 입력 받기
 n = int(input())
 serials = [input().strip() for _ in range(n)]
+answer = []
 
 # 정렬
 serials.sort(key=functools.cmp_to_key(compare_serials))
+
+# for serial_num in len(serials)+1:
+#     for serial_num_sub in serial_num:
+#         compare_serials(serials[serial_num], serials[serial_num_sub])
+#     answer.add(serials[serial_num])
 
 # 출력
 for serial in serials:
